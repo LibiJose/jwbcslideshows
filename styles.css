@@ -1,0 +1,141 @@
+* {box-sizing:border-box}
+body{
+    margin-top: 0cm;
+    margin-left: 0cm;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 10px;
+   
+  }
+.images{
+    height: 100vh;
+    width:100vw;
+    object-fit: cover;
+    vertical-align: middle;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:   	 #ffffff;
+  font-size: 45px;
+  padding: 8px 12px;
+  font: bold;
+  position: absolute;
+  bottom: 55px;
+   margin-left: 50px;
+  width: 100%;
+  text-align: center;
+}
+.text1 {
+  color:   	  #32a8b8;
+  font-size: 50px;
+  padding: 8px 12px;
+  font: bolder;
+  font-family: 'courgette',cursive;
+  position: absolute;
+  top: 15px;
+ 
+  font-weight: bold;
+  
+  font-family: Edwardian Script ITC;
+   margin-left: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*footer*/
+.footer {
+  position: fixed;
+  font-size:20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@media only screen and (max-width: 768px) {
+  .text {
+    color:   	   #91060a;
+    font-size: 45px;
+    padding: 8px 12px;
+    font: bold;
+    position: absolute;
+    top: 395px;
+     margin-left: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .text1{
+    margin-left: 95px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 2.8rem;
+    font-family: Edwardian Script ITC;
+    color:  blue;
+  }
+  
+}
